@@ -28,3 +28,24 @@ let myObj = {
 const myFunction = function () {
     console.log("I'm a function");
 }
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (It stores Primitive Data types), Heap (stores Non-Primitive Data types)
+
+let myName = "Dainwi";
+let anotherName = myName;
+anotherName = "Dainwi Choudhary";
+
+console.log(myName);
+console.log(anotherName);
+
+let user = {
+  email: "user@gmail.com",
+  upi: "user@upi",
+}
+
+let anotherUser = user;
+anotherUser.email = "user@google.com";
+
+console.table([user.email, anotherUser.email]);
